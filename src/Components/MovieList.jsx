@@ -1,6 +1,7 @@
 import React from 'react'
 import {FaEdit} from 'react-icons/fa'
-import {AiFillDelete} from 'react-icons/ai'
+import {AiFillDelete,AiOutlineCaretDown} from 'react-icons/ai'
+import{PiCaretLeftBold,PiCaretRightBold} from 'react-icons/pi'
 import image1 from '../../public/assets/1a.jpg'
 import image2 from '../../public/assets/22.jpeg'
 import image3 from '../../public/assets/33.jpg'
@@ -14,8 +15,8 @@ import image10 from '../../public/assets/101.jpg'
 import image11 from '../../public/assets/111.jpg'
 
 
-const MovieList = ({movies}) => {
-  const movies = [
+const MovieList = ({}) => {
+  const movieslist = [
     {
       id: 1,
       image: image1,
@@ -119,7 +120,13 @@ const MovieList = ({movies}) => {
   ];
   return (
     <>
-    <div className="overflow-x-auto pt-14">
+    <div className="overflow-x-auto pt-14 relative">
+    <div className="flex justify-between items-center mb-4 ">
+        <h1 className="text-2xl text-white font-bold">Movies List</h1>
+        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+          Delete All
+        </button>
+      </div>
       <table className="table-auto border-collapse border bg-blue-700">
         <thead className='bg-white'>
           <tr>
@@ -133,16 +140,16 @@ const MovieList = ({movies}) => {
           </tr>
         </thead>
         <tbody>
-          {movies.map((movie) => (
-            <tr key={movie.id}>
+          {movieslist.map((movies) => (
+            <tr key={movies.id}>
               <td className="border px-4 py-2">
-                <img src={movie.image} className="w-12 h-12" />
+                <img src={movies.image} className="w-12 h-12" />
               </td>
-              <td className="border px-4 py-2 text-white">{movie.name}</td>
-              <td className="border px-4 py-2 text-white">{movie.category}</td>
-              <td className="border px-4 py-2 text-white">{movie.language}</td>
-              <td className="border px-4 py-2 text-white">{movie.year}</td>
-              <td className="border px-4 py-2 text-white">{movie.hours}</td>
+              <td className="border px-4 py-2 text-white">{movies.name}</td>
+              <td className="border px-4 py-2 text-white">{movies.category}</td>
+              <td className="border px-4 py-2 text-white">{movies.language}</td>
+              <td className="border px-4 py-2 text-white">{movies.year}</td>
+              <td className="border px-4 py-2 text-white">{movies.hours}</td>
               <td className="border px-4 py-2 text-white">
                <div className='flex items-center'>
                <button className="flex items-center text-blue-500 px-2 py-2 bg-gray-900">
@@ -155,7 +162,20 @@ const MovieList = ({movies}) => {
             </tr>
           ))}
         </tbody>
+    
+        
+           
+        
+      
       </table>
+      <PiCaretLeftBold
+          size={30}
+          className="ml-1 text-white hover:cursor-pointer left-4 bottom-4"
+        />
+        <PiCaretRightBold
+          size={30}
+          className="ml-1 text-white hover:cursor-pointer absolute bottom-0 right-4 md:right-0"
+        />
     </div>
     </>
   )
