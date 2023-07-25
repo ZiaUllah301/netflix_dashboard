@@ -61,12 +61,13 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className="p-4 bg-blue-900 text-white">
+       <div className="p-4 bg-[#000025]  text-white">
         <h1 className="text-2xl items-start flex font-bold mb-4">Dashboard</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="flex items-center bg-black p-4 rounded-md">
+            {/* Movie Icon */}
             <div className="px-2 py-2 rounded-full bg-orange-600">
-              <BsCardList className="h-4 w-4 text-white" />
+              <BiCategory/>
             </div>
             <div className="flex flex-col ml-4">
               <h2 className="text-lg font-semibold">Total Movies</h2>
@@ -74,8 +75,9 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="flex items-center bg-black p-4 rounded-md">
+            {/* Category Icon */}
             <div className="px-2 py-2 rounded-full bg-blue-500">
-              <BiCategory className="h-4 w-4 text-white" />
+             <BsCardList/>
             </div>
             <div className="flex flex-col ml-4">
               <h2 className="text-lg font-semibold">Total Categories</h2>
@@ -83,8 +85,9 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="flex items-center bg-black p-4 rounded-md">
+            {/* Users Icon */}
             <div className="px-2 py-2 bg-green-500 rounded-full">
-              <FaUsers className="h-4 w-4 text-white" />
+              <FaUsers/>
             </div>
             <div className="flex flex-col ml-4">
               <h2 className="text-lg font-semibold">Total Users</h2>
@@ -95,7 +98,7 @@ const Dashboard = () => {
       </div>
 
       <div className="overflow-x-auto pt-14">
-        <table className="table-auto border-collapse border bg-blue-700">
+        <table className="table-auto border-collapse border bg-[#000025] ">
           <thead className="bg-white">
             <tr>
               <th className="px-4 py-2">Image</th>
@@ -132,14 +135,16 @@ const Dashboard = () => {
             ))}
           </tbody>
         </table>
-        <PiCaretLeftBold
-          size={30}
-          className="ml-1 text-white hover:cursor-pointer left-4 bottom-4"
-        />
-        <PiCaretRightBold
-          size={30}
-          className="ml-1 text-white hover:cursor-pointer absolute bottom-0 right-4 md:right-0"
-        />
+        <div className="flex justify-center mt-4 md:hidden">
+          <PiCaretLeftBold
+            size={30}
+            className="text-white hover:cursor-pointer"
+          />
+          <PiCaretRightBold
+            size={30}
+            className="text-white hover:cursor-pointer ml-2"
+          />
+        </div>
       </div>
     </>
   );

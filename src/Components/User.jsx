@@ -52,56 +52,47 @@ const User = () => {
     ];
   return (
     <>
-    <div className="overflow-x-auto h-screen w-full pt-14">
-    <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl text-white font-bold">Users</h1>
-
+    <div className="h-screen w-full pt-14 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+        <h1 className="text-2xl text-white font-bold mb-4 md:mb-0">Users</h1>
+        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+          Create User
+        </button>
       </div>
-      <table className="table-auto border-collapse border bg-blue-700">
-        <thead className='bg-white'>
-          <tr>
-          <th className="px-4 py-2">IMAGE</th>
-            <th className="px-4 py-2">ID</th>
-            <th className="px-4 py-2 ">DATE</th>
-            <th className="px-4 py-2 ">FULL NAME</th>
-            <th className="px-4 py-2">EMAIL</th>
-            <th className="px-4 py-2 ">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map((users) => (
-            <tr key={users.id}>
-                <td className="border px-4 py-2">
-                  <img src={users.image} className="w-12 h-12"  />
-                </td>
-              <td className="border px-4 py-2 text-white">{users.ID}</td>
-              <td className="border px-4 py-2 text-white">{users.Date}</td>
-              <td className="border px-4 py-2 text-white">{users.name}</td>
-              <td className="border px-4 py-2 text-white">{users.Email}</td>
-              <td className="border px-4 py-2 text-white">
-               <div className='flex items-center'>
-               
-                <button className="text-red-500 ml-2"><AiFillDelete size={20}/></button>
-               </div>
-              
-              </td>
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse border bg-[#000025] ">
+          <thead className="bg-white">
+            <tr>
+              <th className="px-4 py-2">IMAGE</th>
+              <th className="px-4 py-2">ID</th>
+              <th className="px-4 py-2">DATE</th>
+              <th className="px-4 py-2">FULL NAME</th>
+              <th className="px-4 py-2">EMAIL</th>
+              <th className="px-4 py-2">Actions</th>
             </tr>
-          ))}
-        </tbody>
-    
-        
-           
-        
-      
-      </table>
-      <PiCaretLeftBold
-          size={30}
-          className="ml-1 text-white hover:cursor-pointer left-4 bottom-4"
-        />
-        <PiCaretRightBold
-          size={30}
-          className="ml-1 text-white hover:cursor-pointer absolute bottom-0 right-4 md:right-0"
-        />
+          </thead>
+          <tbody>
+            {users.map((user) => (
+              <tr key={user.id}>
+                <td className="border px-4 py-2">
+                  <img src={user.image} className="w-12 h-12 rounded-full" alt={`User ${user.id}`} />
+                </td>
+                <td className="border px-4 py-2 text-white">{user.ID}</td>
+                <td className="border px-4 py-2 text-white">{user.Date}</td>
+                <td className="border px-4 py-2 text-white">{user.name}</td>
+                <td className="border px-4 py-2 text-white">{user.Email}</td>
+                <td className="border px-4 py-2 text-white">
+                  <div className="flex items-center">
+                    <button className="text-red-500 ml-2">
+                      <AiFillDelete size={20} />
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
     </>
   )

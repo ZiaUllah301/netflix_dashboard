@@ -7,6 +7,10 @@ import Dashboard from './Components/Dashboard'
 import MovieList from './Components/MovieList'
 import Categories from './Components/Categories'
 import User from './Components/User'
+import FavoritesMovies from './Components/FavoritesMovies'
+import ChangePassword from './Components/ChangePassword'
+import Footer from './Components/Footer'
+import UpdateProfile from './Components/UpdateProfile'
 
 
 function App() {
@@ -27,11 +31,15 @@ function App() {
 <Route path='/movieslist' element={<MovieList />}></Route>
 <Route path='/categories' element={<Categories />}></Route>
 <Route path='/user' element={<User />}></Route>
+<Route path='/updateprofile' element={<UpdateProfile />}></Route>
+<Route path='/favoritesMovies' element={<FavoritesMovies />}></Route>
+<Route path='/changepassword' element={<ChangePassword />}></Route>
 </Routes>
 
 </div>
 </div>
     </div>
+    <Footer/>
     </Router>
    
     

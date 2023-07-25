@@ -35,15 +35,18 @@ const Sidebar = () => {
         </div>
         <div className="flex items-center mb-4">
           <LuSettings className="h-4 w-4 mr-2" />
-          Update Profile
+          <Link to="/updateprofile">   Update Profile</Link>
+         
         </div>
         <div className="flex items-center mb-4">
           <LuHeart className="h-4 w-4 mr-2" />
-          Favorite Movies
+          <Link to="/favoritesMovies">   Favorite Movies</Link>
+         
         </div>
         <div className="flex items-center mb-4">
           <RiLockPasswordLine className="h-4 w-4 mr-2" />
-          Change Password
+          <Link to="/changepassword">    Change Password</Link>
+         
         </div>
       </div>
 
