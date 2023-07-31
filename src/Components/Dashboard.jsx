@@ -63,7 +63,7 @@ const Dashboard = () => {
     <>
        <div className="p-4 bg-[#000025]  text-white">
         <h1 className="text-2xl items-start flex font-bold mb-4">Dashboard</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <div className="flex items-center bg-black p-4 rounded-md">
             {/* Movie Icon */}
             <div className="px-2 py-2 rounded-full bg-orange-600">

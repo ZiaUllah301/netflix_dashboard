@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div className="flex flex-col md:flex-row">
-      {/* Left Side */}
-      <div className="bg-gray-800 text-white p-4 md:w-64">
+     
+      <div className="bg-[#000025] text-white p-4 md:w-64">
         <div className="flex items-center mb-4">
           <LuLayoutDashboard className="h-4 w-4 mr-2" />
           <Link to="/dashboard">Dashboard</Link>
@@ -22,7 +22,8 @@ const Sidebar = () => {
         </div>
         <div className="flex items-center mb-4">
           <PiFilmReelThin className="h-4 w-4 mr-2" />
-          Add Movies
+          <Link to="/addmovies"> Add Movies</Link>
+         
         </div>
         <div className="flex items-center mb-4">
           <BiCategory className="h-4 w-4 mr-2" />

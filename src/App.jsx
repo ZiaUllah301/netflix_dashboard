@@ -11,6 +11,7 @@ import FavoritesMovies from './Components/FavoritesMovies'
 import ChangePassword from './Components/ChangePassword'
 import Footer from './Components/Footer'
 import UpdateProfile from './Components/UpdateProfile'
+import AddMovies from './Components/AddMovies'
 
 
 function App() {
@@ -27,7 +28,9 @@ function App() {
   </div>
 <div className='col-span-8 md:col-span-6 rounded-md bg-[#000025] border border-gray-800 p-6'>
 <Routes>
+<Route path='/' element={<Dashboard />}></Route>
 <Route path='/dashboard' element={<Dashboard />}></Route>
+<Route path='/addmovies' element={<AddMovies />}></Route>
 <Route path='/movieslist' element={<MovieList />}></Route>
 <Route path='/categories' element={<Categories />}></Route>
 <Route path='/user' element={<User />}></Route>

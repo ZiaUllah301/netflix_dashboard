@@ -7,28 +7,28 @@ const Footer = () => {
         <div className="space-y-2">
           <h2 className="text-lg font-bold">Company</h2>
           <ul className="list-none">
-            <li className="text-white hover:cursor-pointer">Home</li>
-            <li className="text-white hover:cursor-pointer">Movies</li>
-            <li className="text-white cursor-pointer">About Us</li>
-            <li className="text-white cursor-pointer">Contact Us</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Home</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Movies</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">About Us</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Contact Us</li>
           </ul>
         </div>
         <div className="space-y-2">
           <h2 className="text-lg font-bold">Top Categories</h2>
           <ul className="list-none">
-            <li className="text-white cursor-pointer">Action</li>
-            <li className="text-white cursor-pointer">Drama</li>
-            <li className="text-white cursor-pointer">Romantic</li>
-            <li className="text-white cursor-pointer">Historical</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Action</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Drama</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Romantic</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Historical</li>
           </ul>
         </div>
         <div className="space-y-2">
           <h2 className="text-lg font-bold">My Account</h2>
           <ul className="list-none">
-            <li className="text-white cursor-pointer">Dashboard</li>
-            <li className="text-white cursor-pointer">Favorite Movies</li>
-            <li className="text-white cursor-pointer">Update Profile</li>
-            <li className="text-white cursor-pointer">Change Password</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Dashboard</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Favorite Movies</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Update Profile</li>
+            <li className="text-white hover:text-red-700 cursor-pointer">Change Password</li>
           </ul>
         </div>
         <div className="space-y-2">

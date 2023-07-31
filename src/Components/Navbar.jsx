@@ -1,6 +1,7 @@
 import React from 'react';
 import { BiSearch } from 'react-icons/bi';
 import { BsHeart } from 'react-icons/bs';
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -19,11 +20,27 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex items-center space-x-4 flex-wrap">
-        <div className="text-white hidden md:block">Movies</div>
-        <div className="text-white hidden md:block">About Us</div>
-        <div className="text-white hidden md:block">Contact Us</div>
+        <div className="text-white hidden md:block">
+          <Link to="/addmovies">
+          Movies
+          </Link>
+        </div>
+        <div className="text-white hidden md:block">
+        <Link to="/user">
+        About Us
+          </Link>
+         
+          </div>
+        <div className="text-white hidden md:block">
+        <Link to="/updateprofile">
+        Contact Us
+          </Link>
+          
+          </div>
         <div className="text-white">
+        <Link to="/dashboard">
           <BsHeart size={30} />
+          </Link>
         </div>
       </div>
     </nav>
