@@ -118,7 +118,7 @@ const Categories = () => {
             Create
           </button>
         </div>
-        <table className="table-auto border-collapse border bg-[#000025]  w-full">
+        <table className="table-auto  bg-[#000025]  w-full">
           <thead className="bg-white">
             <tr>
               <th className="px-4 py-2">ID</th>
@@ -130,10 +130,10 @@ const Categories = () => {
           <tbody>
             {category.map((category) => (
               <tr key={category.id}>
-                <td className="border px-4 py-2 text-white">{category.ID}</td>
-                <td className="border px-4 py-2 text-white">{category.Date}</td>
-                <td className="border px-4 py-2 text-white">{category.Title}</td>
-                <td className="border px-4 py-2 text-white">
+                <td className=" px-4 py-2 text-white">{category.ID}</td>
+                <td className=" px-4 py-2 text-white">{category.Date}</td>
+                <td className="px-4 py-2 text-white">{category.Title}</td>
+                <td className=" px-4 py-2 text-white">
                   <div className="flex items-center">
                     <button className="flex items-center text-blue-500 px-2 py-2 bg-gray-900">
                       Edit <FaEdit className="ml-1 text-green-400" />

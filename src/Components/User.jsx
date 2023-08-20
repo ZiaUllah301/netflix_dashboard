@@ -60,7 +60,7 @@ const User = () => {
         </button>
       </div>
       <div className="overflow-x-auto">
-        <table className="w-full border-collapse border bg-[#000025] ">
+        <table className="w-full  bg-[#000025] ">
           <thead className="bg-white">
             <tr>
               <th className="px-4 py-2">IMAGE</th>
@@ -74,14 +74,14 @@ const User = () => {
           <tbody>
             {users.map((user) => (
               <tr key={user.id}>
-                <td className="border px-4 py-2">
+                <td className=" px-4 py-2">
                   <img src={user.image} className="w-12 h-12 rounded-full" alt={`User ${user.id}`} />
                 </td>
-                <td className="border px-4 py-2 text-white">{user.ID}</td>
-                <td className="border px-4 py-2 text-white">{user.Date}</td>
-                <td className="border px-4 py-2 text-white">{user.name}</td>
-                <td className="border px-4 py-2 text-white">{user.Email}</td>
-                <td className="border px-4 py-2 text-white">
+                <td className=" px-4 py-2 text-white">{user.ID}</td>
+                <td className=" px-4 py-2 text-white">{user.Date}</td>
+                <td className="px-4 py-2 text-white">{user.name}</td>
+                <td className=" px-4 py-2 text-white">{user.Email}</td>
+                <td className=" px-4 py-2 text-white">
                   <div className="flex items-center">
                     <button className="text-red-500 ml-2">
                       <AiFillDelete size={20} />

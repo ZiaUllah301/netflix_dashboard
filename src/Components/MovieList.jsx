@@ -127,7 +127,7 @@ const MovieList = ({}) => {
           Delete All
         </button>
       </div>
-      <table className="table-auto border-collapse border bg-[#000025] ">
+      <table className="table-auto  bg-[#000025] ">
         <thead className='bg-white'>
           <tr>
             <th className="px-4 py-2">Image</th>
@@ -142,15 +142,15 @@ const MovieList = ({}) => {
         <tbody>
           {movieslist.map((movies) => (
             <tr key={movies.id}>
-              <td className="border px-4 py-2">
+              <td className=" px-4 py-2">
                 <img src={movies.image} className="w-12 h-12" />
               </td>
-              <td className="border px-4 py-2 text-white">{movies.name}</td>
-              <td className="border px-4 py-2 text-white">{movies.category}</td>
-              <td className="border px-4 py-2 text-white">{movies.language}</td>
-              <td className="border px-4 py-2 text-white">{movies.year}</td>
-              <td className="border px-4 py-2 text-white">{movies.hours}</td>
-              <td className="border px-4 py-2 text-white">
+              <td className=" px-4 py-2 text-white">{movies.name}</td>
+              <td className=" px-4 py-2 text-white">{movies.category}</td>
+              <td className=" px-4 py-2 text-white">{movies.language}</td>
+              <td className=" px-4 py-2 text-white">{movies.year}</td>
+              <td className=" px-4 py-2 text-white">{movies.hours}</td>
+              <td className=" px-4 py-2 text-white">
                <div className='flex items-center'>
                <button className="flex items-center text-blue-500 px-2 py-2 bg-gray-900">
                   Edit <FaEdit className="ml-1 text-green-400" />

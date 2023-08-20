@@ -1,5 +1,5 @@
 import React from 'react';
-import { BiSearch } from 'react-icons/bi';
+import { AiOutlineSearch } from 'react-icons/ai';
 import { BsHeart } from 'react-icons/bs';
 import {Link} from 'react-router-dom'
 
@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="text-red-900 text-2xl font-bold">NETFLIXO</div>
         <div className="ml-4 flex">
           <div className="bg-red-700 px-5 py-[12px] border rounded-l-lg border-red-700">
-            <BiSearch size={14} color="white" />
+            <AiOutlineSearch size={14} color="white" />
           </div>
           <input
             type="text"

@@ -127,7 +127,7 @@ const FavoritesMovies = ({}) => {
           Delete All
         </button>
       </div>
-      <table className="table-auto border-collapse border bg-[#000025] ">
+      <table className="table-auto  bg-[#000025] ">
         <thead className='bg-white'>
           <tr>
             <th className="px-4 py-2">Image</th>
@@ -142,15 +142,15 @@ const FavoritesMovies = ({}) => {
         <tbody>
           {favorite.map((favorite) => (
             <tr key={favorite.id}>
-              <td className="border px-4 py-2">
+              <td className=" px-4 py-2">
                 <img src={favorite.image} className="w-12 h-12" />
               </td>
-              <td className="border px-4 py-2 text-white">{favorite.name}</td>
-              <td className="border px-4 py-2 text-white">{favorite.category}</td>
-              <td className="border px-4 py-2 text-white">{favorite.language}</td>
-              <td className="border px-4 py-2 text-white">{favorite.year}</td>
-              <td className="border px-4 py-2 text-white">{favorite.hours}</td>
-              <td className="border px-4 py-2 text-white">
+              <td className="px-4 py-2 text-white">{favorite.name}</td>
+              <td className=" px-4 py-2 text-white">{favorite.category}</td>
+              <td className=" px-4 py-2 text-white">{favorite.language}</td>
+              <td className=" px-4 py-2 text-white">{favorite.year}</td>
+              <td className=" px-4 py-2 text-white">{favorite.hours}</td>
+              <td className=" px-4 py-2 text-white">
                <div className='flex items-center'>
                <button className="flex items-center text-blue-500 px-2 py-2 bg-gray-900">
                  Downloads <BiSolidCloudDownload size={20} className="ml-1 text-green-400" />
