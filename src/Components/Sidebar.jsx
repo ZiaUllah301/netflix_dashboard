@@ -1,5 +1,5 @@
 import React from 'react';
-import { LuLayoutDashboard, LuSettings, LuHeart } from 'react-icons/lu';
+import { AiFillDashboard, AiFillSetting, AiOutlineHeart } from 'react-icons/ai';
 import { PiFilmReelThin } from 'react-icons/pi';
 import { BsCardList } from 'react-icons/bs';
 import { BiCategory } from 'react-icons/bi';
@@ -13,7 +13,7 @@ const Sidebar = () => {
      
       <div className="bg-[#000025] text-white p-4 md:w-64">
         <div className="flex items-center mb-4">
-          <LuLayoutDashboard className="h-4 w-4 mr-2" />
+          <AiFillDashboard className="h-4 w-4 mr-2" />
           <Link to="/dashboard">Dashboard</Link>
         </div>
         <div className="flex items-center mb-4">
@@ -35,12 +35,12 @@ const Sidebar = () => {
         
         </div>
         <div className="flex items-center mb-4">
-          <LuSettings className="h-4 w-4 mr-2" />
+          <AiFillSetting className="h-4 w-4 mr-2" />
           <Link to="/updateprofile">   Update Profile</Link>
          
         </div>
         <div className="flex items-center mb-4">
-          <LuHeart className="h-4 w-4 mr-2" />
+          <AiOutlineHeart className="h-4 w-4 mr-2" />
           <Link to="/favoritesMovies">   Favorite Movies</Link>
          
         </div>
